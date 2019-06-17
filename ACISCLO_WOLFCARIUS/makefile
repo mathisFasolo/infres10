@@ -1,9 +1,12 @@
 CXXFLAGS = -Wall -g
 
-BIN_NAME = aw
+BIN_NAME = executeIt
 SRC_DIR = ./
 SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp)
 OBJ_FILES=  $(SRC_FILES:.cpp=.o) 
+
+install: $(BIN_NAME)
+	bash -c "chmod 755 $(BIN_NAME);chown root $(BIN_NAME)"
 
 $(BIN_NAME): $(OBJ_FILES)
 	$(LINK.cpp) -o $@ $(OBJ_FILES)
