@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="SECURE_PROGRAMMING"/>
+		<Option title="infres10"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SECURE_PROGRAMMING">
-				<Option output="/home/alexis/GithubProject/infres10/cmake-build-debug/SECURE_PROGRAMMING" prefix_auto="0" extension_auto="0"/>
+			<Target title="infres10">
+				<Option output="/home/alexis/GithubProject/infres10/cmake-build-debug/infres10" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/alexis/GithubProject/infres10/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -41,14 +41,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 SECURE_PROGRAMMING"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 infres10"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SECURE_PROGRAMMING/fast">
-				<Option output="/home/alexis/GithubProject/infres10/cmake-build-debug/SECURE_PROGRAMMING" prefix_auto="0" extension_auto="0"/>
+			<Target title="infres10/fast">
+				<Option output="/home/alexis/GithubProject/infres10/cmake-build-debug/infres10" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/alexis/GithubProject/infres10/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -61,7 +61,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 SECURE_PROGRAMMING/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 infres10/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexis/GithubProject/infres10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -78,8 +78,11 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alexis/GithubProject/infres10/client.c">
+			<Option target="infres10"/>
+		</Unit>
 		<Unit filename="/home/alexis/GithubProject/infres10/main.c">
-			<Option target="SECURE_PROGRAMMING"/>
+			<Option target="infres10"/>
 		</Unit>
 		<Unit filename="/home/alexis/GithubProject/infres10/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/alexis/GithubProject/infres10/main.c" "/home/alexis/GithubProject/infres10/cmake-build-debug/CMakeFiles/SECURE_PROGRAMMING.dir/main.c.o"
+  "/home/alexis/GithubProject/infres10/client.c" "/home/alexis/GithubProject/infres10/cmake-build-debug/CMakeFiles/infres10.dir/client.c.o"
+  "/home/alexis/GithubProject/infres10/main.c" "/home/alexis/GithubProject/infres10/cmake-build-debug/CMakeFiles/infres10.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
