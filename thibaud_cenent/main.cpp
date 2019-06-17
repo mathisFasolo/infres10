@@ -6,16 +6,18 @@
 
 using namespace std;
 
-void start(Transaction t, int threadName) {
+void start(Transaction t, int threadId) {
+    string threadName = "T" + std::to_string(threadId);
+
     switch (t.getTransactionType()) {
         case TransactionType::DEPOSIT:
             t.deposit();
-            t.printBalance("T"+std::to_string(threadName));
+            t.printBalance(threadName);
             break;
 
         case TransactionType::WITHDRAW:
-            t.withDraw();
-            t.printBalance("T"+std::to_string(threadName));
+            t.withdraw();
+            t.printBalance(threadName);
             break;
 
         default:
@@ -24,10 +26,8 @@ void start(Transaction t, int threadName) {
     }
 }
 
-
-
 int main() {
-    Account myAccount(22222222);
+    Account myAccount(1);
 
     vector<std::thread> threads;
 

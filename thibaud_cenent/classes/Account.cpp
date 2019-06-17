@@ -1,4 +1,5 @@
 #include <mutex>
+#include <iostream>
 #include "Account.h"
 
 Account::Account(int accountNumber) {
@@ -8,7 +9,7 @@ Account::Account(int accountNumber) {
 
 Account::Account() {
     this->accountNumber = 0;
-    this->accountNumber = 0;
+    this->accountBalance = 0;
 };
 
 double Account::getAccountBalance() {
@@ -21,10 +22,11 @@ bool Account::deposit(double amount) {
     }
 
     this->accountBalance = this->accountBalance + amount;
+
     return true;
 }
 
-bool Account::withDraw(double amount) {
+bool Account::withdraw(double amount) {
     if(amount > this->accountBalance) {
         return false;
     }
@@ -32,4 +34,8 @@ bool Account::withDraw(double amount) {
     this->accountBalance = this->accountBalance - amount;
 
     return true;
+}
+
+int Account::getAccountNumber() {
+    return this->accountNumber;
 }

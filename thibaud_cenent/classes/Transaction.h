@@ -18,7 +18,7 @@ class Transaction{
     public:
         Transaction(Account account, TransactionType  transactionType, double amount);
         void deposit();
-        void withDraw();
+        void withdraw();
         void printBalance(const std::string& threadName);
         TransactionType getTransactionType();
 

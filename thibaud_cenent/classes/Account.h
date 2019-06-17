@@ -11,7 +11,8 @@ class Account {
         Account();
         double getAccountBalance();
         bool deposit(double amount);
-        bool withDraw(double amount);
+        bool withdraw(double amount);
+        int getAccountNumber();
 };
 
 #endif
