@@ -29,8 +29,13 @@ var onload =  function () {
     if (document.getElementById('identifiant').value.length !== 0) {
         var newP = document.createElement( 'p');
         document.body.insertBefore(newP, document.getElementById('form'));
-        document.body.getElementsByTagName('p')[0].innerHTML = 'Welcome ' + document.getElementById('identifiant').value;
+        document.body.getElementsByTagName('p')[0].innerHTML = 'Bienvenue ' + document.getElementById('identifiant').value;
     }
+}
+
+var reset = function () {
+    eraseCookie('id');
+    eraseCookie('pswd');
 }
 
 var validation = function() {
