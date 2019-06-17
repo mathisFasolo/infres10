@@ -24,10 +24,17 @@ function eraseCookie(name) {
 }
 
 var onload =  function () {
-    document.getElementById('reponse').innerHTML = atob(readCookie('res'));
+    console.log('chargé');
+    document.getElementById('identifiant').value = atob(readCookie('id'));
+    if (document.getElementById('identifiant').value.length !== 0) {
+        var newP = document.createElement( 'p');
+        document.body.insertBefore(newP, document.getElementById('form'));
+        document.body.getElementsByTagName('p')[0].innerHTML = 'Welcome ' + document.getElementById('identifiant').value;
+    }
 }
 
 var validation = function() {
-    createCookie('res', document.getElementById('saisie').value, 2);
+    createCookie('id', document.getElementById('identifiant').value, 2);
+    createCookie('pswd', document.getElementById('password').value, 2);
 }
 
