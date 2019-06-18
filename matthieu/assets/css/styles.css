@@ -1,0 +1,220 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: rgb(40,40,40);
+    padding:0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', 'Tahoma';
+    overflow: hidden;
+    user-select: none;
+}
+#toolbar{
+    height: 60px;
+    width: 100%;
+    background-color: #FFC107;
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#toolbar div{
+    width: 50%;
+}
+
+#toolbar .first{
+    float: left;
+}
+
+#toolbar .second{
+    text-align: right;
+    float: right;
+}
+
+#toolbar .first p{
+    font-size: 20px;
+    width: 240px;
+    margin: 0;
+    padding: 18px;
+}
+
+@font-face{
+    font-family : "Roboto";
+    src : url('../fonts/Roboto-Regular.ttf');
+}
+
+#content{
+    color: white;
+    padding: 0 16px;
+}
+
+#content h2{
+    padding-left: 16px;
+}
+
+#content .categories{
+    width: 100%;
+}
+
+#content .hosts{
+    width: 100%;
+}
+
+#content .categories .cat{
+    width: 256px;
+    float: left;
+    height: 256px;
+    margin: 16px;
+    background-color: rgb(60,60,60);
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+}
+
+#content .hosts .host{
+    width: 128px;
+    float: left;
+    height: 128px;
+    margin: 16px;
+    background-color: rgb(60,60,60);
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 128px;
+}
+
+#content .categories .cat img{
+    clear: both;
+    padding: 58px 78px ;
+}
+#content .categories .cat span{
+    width: 100%;
+    text-align: center;    
+    padding: 0 16px;
+}
+
+#content .hosts .host p{
+    text-align: center;
+    margin: 0;
+}
+
+#filter{
+    width: 100%;
+    height: 48px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#filter div{
+    float: left;
+    padding: 14px 48px;
+    cursor: pointer;
+}
+
+#filter_titre{
+    overflow: hidden;
+    color: white;
+    padding: 16px;
+}
+#filter .selected{
+    color: rgba(255,255,255,0.38);
+}
+#filter_titre .selected{
+    color: rgba(255,255,255,0.38);
+}
+#filter_year .selected{
+    color: rgba(255,255,255,0.38);
+}#filter_genres .selected{
+    color: rgba(255,255,255,0.38);
+}
+
+#filter_titre div{
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+}
+
+#filter_year{
+    overflow: hidden;
+    color: white;
+    padding: 22px;
+}
+
+#filter_year div{
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#filter_genres{
+    overflow: hidden;
+    color: white;
+    padding: 22px;
+}
+
+#filter_genres div{
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#content #films{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#content #films .film{
+    width: 190px;
+    background-color: rgb(60,60,60);
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0,0,0,0.23);
+    padding: 1px;
+    padding-bottom: 10px;
+    float: left;
+    margin: 16px;
+    cursor: pointer;
+}
+
+#content #films .film img{
+    width: 100%;
+    height: 280px;
+}
+
+#content #films .film p{
+    margin: 5px 0;
+    text-align: center;
+}
+
+#content #films .film .qualite{
+    margin: 10px;
+    padding: 2px;
+    background: white;
+    border-radius: 5px;
+    color: rgb(60,60,60);
+    font-size: 10px;
+}
+
+#pagination{
+    text-align: center;
+    height: 55px;
+    margin: 15px;
+    font-size: 10px;
+}
+
+#pagination div{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: #FFC107;
+    float:left;
+    cursor: pointer;
+}
+
+#pagination .selected{
+    background-color: #FFA000;
+}
+
+#pagination #more{
+    background-color: transparent;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
