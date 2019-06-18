@@ -1,0 +1,20 @@
+html, body {
+    font-family: Roboto, sans-serif;
+    background: #00ffef;
+    text-align: center;
+}
+
+#title {
+    color: #2dff00;
+}
+
+#form {
+    width: 20%;
+    margin: auto;
+}
+
+.field {
+    display: block;
+    width: 100%;
+    color: rgba(126, 124, 125, 0.46);
+}
