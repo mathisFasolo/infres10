@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/projet/Téléchargements/Unttitled/src/gereClients.c
+gereClients.h
+/home/projet/Téléchargements/Unttitled/src/gereClients.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+lectureClientFile.h
+/home/projet/Téléchargements/Unttitled/src/lectureClientFile.h
+
+/home/projet/Téléchargements/Unttitled/src/gereClients.h
+manipCompte.h
+/home/projet/Téléchargements/Unttitled/src/manipCompte.h
+
+/home/projet/Téléchargements/Unttitled/src/lectureClientFile.h
+
+/home/projet/Téléchargements/Unttitled/src/manipCompte.h
+
