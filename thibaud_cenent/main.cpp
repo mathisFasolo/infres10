@@ -35,11 +35,6 @@ int main() {
 
     for(int i = 0; i < 50; ++i) {
         Transaction t(&myAccount, TransactionType::DEPOSIT, 5.00);
-        start(t, i);
-    }
-
-    for(int i = 0; i < 50; ++i) {
-        Transaction t(&myAccount, TransactionType::DEPOSIT, 5.00);
         threads.emplace_back(start, t, cpt);
         ++cpt;
 
