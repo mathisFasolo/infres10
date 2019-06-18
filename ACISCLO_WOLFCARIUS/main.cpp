@@ -13,7 +13,7 @@ void helper() {
     exit(EXIT_SUCCESS);;}
 int main(int argc, char* argv[]) {
 
-    //setuid(geteuid(), geteuid());
+    setreuid(geteuid(), geteuid());
 
     for( int i = 0; i < argc; ++i){
     string arg = argv[i];
