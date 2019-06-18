@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/SECURE_PROGRAMMING.dir/main.c.o  -o SECURE_PROGRAMMING 
