@@ -1,0 +1,16 @@
+security:
+    providers:
+        in_memory:
+            memory: ~
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt|error)|css|images|js)/
+            security: false
+
+        default:
+            anonymous: ~
+
+    access_control:
+    # require ROLE_ADMIN for /admin*
+    - { path: ^/ctf, roles: ROLE_ADMIN }
