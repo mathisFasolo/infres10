@@ -12,16 +12,15 @@ enum TransactionType {
 class Transaction{
     private:
         TransactionType  transactionType;
-        Account account;
+        Account* account;
         double amount;
 
     public:
-        Transaction(Account account, TransactionType  transactionType, double amount);
+        Transaction(Account *account, TransactionType  transactionType, double amount);
         void deposit();
         void withdraw();
         void printBalance(const std::string& threadName);
         TransactionType getTransactionType();
-
 };
 
 #endif

@@ -7,11 +7,11 @@ class Account {
         double accountBalance;
 
     public:
-        explicit Account(int accountNumber);
+        Account(int accountNumber);
         Account();
         double getAccountBalance();
-        bool deposit(double amount);
-        bool withdraw(double amount);
+        void deposit(double amount);
+        void withdraw(double amount);
         int getAccountNumber();
 };
 

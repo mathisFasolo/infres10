@@ -34,14 +34,19 @@ int main() {
     int cpt = 0;
 
     for(int i = 0; i < 50; ++i) {
-        Transaction t(myAccount, TransactionType::DEPOSIT, 5.00);
+        Transaction t(&myAccount, TransactionType::DEPOSIT, 5.00);
+        start(t, i);
+    }
+
+    for(int i = 0; i < 50; ++i) {
+        Transaction t(&myAccount, TransactionType::DEPOSIT, 5.00);
         threads.emplace_back(start, t, cpt);
         ++cpt;
 
     }
 
     for(int j = 0; j < 50; ++j) {
-        Transaction t(myAccount, TransactionType::WITHDRAW, 1.00);
+        Transaction t(&myAccount, TransactionType::WITHDRAW, 1.00);
         threads.emplace_back(start, t, cpt);
         ++cpt;
     }
