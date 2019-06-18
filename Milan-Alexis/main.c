@@ -7,9 +7,6 @@
 #include <pthread.h>
 
 
-int atoil(char* v){
-    return atoi(v)*27650;
-}
 void inc(){
     int socket_desc, client_sock, c, read_size;
     struct sockaddr_in server, client;
@@ -22,7 +19,7 @@ void inc(){
 
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons(44444);
+    server.sin_port = htons(44445);
 
     if (bind(socket_desc, (struct sockaddr *) &server, sizeof(server)) < 0) {
         perror("bind failed. Error");
@@ -70,7 +67,7 @@ int main(int argc, char *argv[]) {
 
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons(45001);
+    server.sin_port = htons(45000);
 
     if (bind(socket_desc, (struct sockaddr *) &server, sizeof(server)) < 0) {
         perror("bind failed. Error");
@@ -92,8 +89,8 @@ int main(int argc, char *argv[]) {
 
     while ((read_size = read(client_sock, client_message, sizeof(client_message))) > 0) {
 
-            value = atoil(client_message);
-            if((value == -0x6B6C)==0){
+            value = atoi(client_message);
+            if((value == -1)){
                 char* mess="Welcome to system";
                 write(client_sock, mess, strlen(mess));
                 memset(&client_message, 0, sizeof(client_message));
