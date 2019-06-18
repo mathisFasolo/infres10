@@ -8,8 +8,8 @@
 import sys
 import os
 import time
-from skyaxx.Transformation import Transformation
-from skyaxx.backup import backup, restore
+from Transformation import Transformation
+from backup import backup, restore
 
 
 def process(transformation):
@@ -27,9 +27,9 @@ def process(transformation):
 if __name__ == '__main__':
     """
     USAGE: 
-    python brogramme.py :valeur :operations[]
+    python3 brogramme.py :valeur :operations[]
     RECOVERY MODE:
-    python brogramme.py
+    python3 brogramme.py
     """
     if len(sys.argv) <= 2:
         if os.path.exists("./temp/backup.bcp"):
